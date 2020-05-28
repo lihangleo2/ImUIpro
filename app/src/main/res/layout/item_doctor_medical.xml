@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txt_time"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/grey89"
+            android:text="昨天 16:23"
+            android:layout_marginBottom="@dimen/dp_m_20"
+            />
+        <RelativeLayout
+            android:layout_below="@+id/txt_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_pation_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#898989"
+                android:text="杨谢君  主治医师"
+                android:layout_toRightOf="@+id/image_pation_head"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_5"
+                />
+
+            <ImageView
+                android:id="@+id/image_pation_head"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_alignParentLeft="true"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@mipmap/head_default"
+                />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_below="@+id/txt_pation_name"
+                android:layout_toRightOf="@+id/image_pation_head"
+                android:layout_width="@dimen/dp_270"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_mychat_helper_pop"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                >
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image_medical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="@dimen/dp_40"
+                        android:src="@mipmap/new_medical"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_medical_title"
+                        android:layout_toRightOf="@+id/image_medical"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@color/black1b"
+                        android:text="2020-04-22  病历"
+                        />
+
+                    <TextView
+                        android:layout_below="@+id/txt_medical_title"
+                        android:layout_toRightOf="@+id/image_medical"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_15"
+                        android:textColor="@color/grey89"
+                        android:text="主诉：感冒不舒服感冒不舒服感冒不舒服感冒不...."
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/grey_ef"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="查看详情"
+                        android:textColor="#898989"
+                        android:textSize="@dimen/sp_14" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_7"
+                        android:layout_height="@dimen/dp_12"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiangyou_grey" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</layout>

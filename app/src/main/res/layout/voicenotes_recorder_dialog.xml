@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/record_microphone_bj"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/recorder_dialog_lLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/recorder_dialog_icon"
+                    android:layout_width="55dp"
+                    android:layout_height="65dp"
+                    android:src="@mipmap/icon_maikefeng"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/recorder_dialog_ivVoice"
+                    android:layout_width="40dp"
+                    android:layout_height="65dp"
+                    android:src="@mipmap/icon_voice_1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/recorder_dialog_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_alignBottom="@id/recorder_dialog_lLayout"
+                android:layout_toRightOf="@id/recorder_dialog_lLayout"
+                android:textColor="@color/white"
+                android:text="60''"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/recorder_dialog_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="手指松开 开始发送"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Emojicon</string>
+    <string name="des">首先感谢以下2个开源项目\n\n1、https://github.com/rockerhieu/emojicon \n2、https://github.com/shinezejian/emotionkeyboard</string>
+</resources>

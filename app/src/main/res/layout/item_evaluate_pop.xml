@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="本次服务评价"
+            android:textColor="@color/black1b"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_pop_delete"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/dp_6"
+            android:src="@mipmap/guanbi" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您对医生的评价"
+            android:textColor="@color/black1b"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginRight="@dimen/dp_10"
+            />
+
+
+<!--        <RatingBar-->
+<!--            android:layout_marginLeft="@dimen/dp_15"-->
+<!--            android:id="@+id/ratingBar_game"-->
+<!--            style="@style/articlelist_item_ratingbar_style"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:rating="2"-->
+<!--            />-->
+
+        <com.willy.ratingbar.ScaleRatingBar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/simpleRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srb_numStars="5"
+            app:srb_minimumStars="1"
+            app:srb_rating="2"
+            app:srb_starWidth="20dp"
+            app:srb_starHeight="20dp"
+            app:srb_starPadding="7dp"
+            app:srb_stepSize="1"
+            app:srb_isIndicator="false"
+            app:srb_clickable="true"
+            app:srb_scrollable="true"
+            app:srb_clearRatingEnabled="false"
+            app:srb_drawableEmpty="@mipmap/new_star_false"
+            app:srb_drawableFilled="@mipmap/new_star_true">
+
+        </com.willy.ratingbar.ScaleRatingBar>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="还有什么想对TA说的话吗？"
+        android:textColor="@color/black1b"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginRight="@dimen/dp_10"
+        />
+
+
+    <io.github.rockerhieu.emojicon.EmojiconEditText
+        android:id="@+id/bar_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_130"
+        android:maxHeight="80dp"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toLeftOf="@+id/emotion_button"
+        android:layout_toRightOf="@+id/img_voice"
+        android:background="@drawable/btn_line_selector"
+        android:hint="请输入您的评价内容，不超过200个字"
+        android:imeOptions="actionSend"
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+        android:minHeight="40dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000"
+        android:textColorHint="#898989"
+        android:textSize="@dimen/sp_12"
+        app:emojiconSize="18dp"
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:cursorVisible="true"
+        android:gravity="start"
+        />
+
+    <com.lihang.ShadowLayout
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_18"
+        android:id="@+id/shadowLayout_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:hl_cornerRadius="@dimen/dp_5"
+        app:hl_isShowShadow="false"
+        app:hl_shadowBackColor="#21BEBE"
+        app:hl_shadowBackColorClicked="#8921BEBE">
+
+        <TextView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+    </com.lihang.ShadowLayout>
+
+
+
+</LinearLayout>

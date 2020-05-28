@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 状态栏字体白色，背景颜色随意更改 -->
+    <style name="WhiteFront_AppTheme" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="colorPrimary">@color/black</item> <!-- 系统toolbar上的字体颜色值 -->
+        <item name="colorPrimaryDark">@color/white</item>   <!-- 状态栏背景颜色 -->
+        <item name="colorAccent">@color/colorPrimary</item>  <!-- 指的是手指按下，系统控件的颜色值 -->
+        <item name="android:windowBackground">@color/white</item> <!-- 设置app背景颜色的默认值 -->
+    </style>
+
+
+    <!-- 状态栏字体颜色为黑色 -->
+    <style name="BlackFront_AppTheme" parent="WhiteFront_AppTheme">
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>  <!-- 加上这句后，状态栏的字体眼设置会变成黑色-->
+    </style>
+
+
+    <!--对话框透明背景-->
+    <style name="Translucent_NoTitle" parent="android:style/Theme.Dialog">
+        <!--边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--半透明-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--提示框背景（透明）-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="pop_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/translate_pop_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_pop_out</item>
+    </style>
+
+</resources>

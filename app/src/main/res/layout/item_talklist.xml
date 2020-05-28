@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_90"
+        android:background="@color/white"
+        android:clipChildren="false">
+
+        <RelativeLayout
+            android:id="@+id/slide_itemView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:tag="slide_flag">
+
+
+            <RelativeLayout
+                android:id="@+id/relative_main_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+               <ImageView
+                   android:id="@+id/img_head"
+                   android:layout_marginLeft="@dimen/dp_15"
+                   android:layout_width="@dimen/dp_46"
+                   android:layout_height="@dimen/dp_46"
+                   android:src="@mipmap/head_default"
+                   android:layout_centerVertical="true"
+                   />
+
+                <TextView
+                    android:layout_alignRight="@+id/img_head"
+                    android:layout_alignTop="@+id/img_head"
+                    android:id="@+id/txt_red_not_read"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_for_shopcart"
+                    android:gravity="center"
+                    android:minWidth="@dimen/dp_16"
+                    android:minHeight="@dimen/dp_16"
+                    android:paddingLeft="@dimen/dp_2"
+                    android:paddingRight="@dimen/dp_2"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_toRightOf="@+id/img_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_15"
+                            android:textColor="@color/black1b"
+                            android:text="麦克林"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_13"
+                            android:textColor="#585858"
+                            android:text="主治医师"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_12"
+                            android:textColor="#AFAFAF"
+                            android:text="16:30"
+                            />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="#898989"
+                        android:text="您向医师发起了问诊，请耐心等待医生接诊"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        />
+
+                    <TextView
+                        android:paddingLeft="@dimen/dp_4"
+                        android:paddingRight="@dimen/dp_4"
+                        android:paddingTop="@dimen/dp_2"
+                        android:paddingBottom="@dimen/dp_2"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:background="@drawable/shpe_talk_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="#21BEBE"
+                        android:text="就诊人：王宏宇"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/slide"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/relative_main_content"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_collect"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="match_parent"
+                    android:background="#FFB400"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_20"
+                    android:text="置顶"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/txt_delete"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="match_parent"
+                    android:background="#E50B35"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/grey_ef"
+            />
+    </RelativeLayout>
+</layout>

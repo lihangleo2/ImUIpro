@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LeoTitleBar">
+        <attr name="hl_background" format="color" />
+        <attr name="hl_textTitleColor" format="color" />
+        <attr name="hl_textTitleSize" format="integer" />
+        <attr name="hl_textTitle" format="string" />
+        <attr name="hl_showLeftBtn" format="boolean" />
+        <attr name="hl_leftBtnDrawable" format="reference" />
+        <attr name="hl_showRightText" format="string" />
+        <attr name="hl_rightBtnDrawable" format="reference" />
+        <attr name="hl_divideColor" format="color" />
+        <attr name="hl_bold" format="boolean" />
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_input"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffcdcdcd" />
+
+
+    <RelativeLayout
+        android:id="@+id/linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="7dp">
+
+
+        <ImageView
+            android:tag="0"
+            android:id="@+id/img_voice"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignBottom="@+id/bar_edit_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="6dp"
+            android:src="@mipmap/emj_voice" />
+
+        <io.github.rockerhieu.emojicon.EmojiconEditText
+            android:id="@+id/bar_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/emotion_button"
+            android:layout_toRightOf="@+id/img_voice"
+            android:background="@drawable/btn_line_selector"
+            android:hint="描述越细 医生判断越准确"
+            android:imeOptions="actionSend"
+            android:inputType="textMultiLine"
+            android:maxLength="168"
+            android:minHeight="40dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000"
+            android:textColorHint="#CFCFCF"
+            android:textSize="16dp"
+            emojicon:emojiconSize="18dp"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:cursorVisible="false"
+            android:gravity="center_vertical"
+            />
+
+
+        <com.leo.impro.customview.audiorecord.AudioRecorderButton
+            android:visibility="gone"
+            android:clickable="true"
+            android:id="@+id/audioRecordButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="按住说话"
+            android:maxHeight="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/emotion_button"
+            android:layout_toRightOf="@+id/img_voice"
+            android:background="@drawable/btn_line_selector"
+            android:maxLength="168"
+            android:minHeight="40dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#1b1b1b"
+            android:textSize="16dp"
+            android:gravity="center"
+            />
+
+
+        <ImageView
+            android:id="@+id/emotion_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignBottom="@+id/bar_edit_text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/emj_add" />
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/image_add"-->
+<!--            android:layout_width="28dp"-->
+<!--            android:layout_height="28dp"-->
+<!--            android:layout_alignBottom="@+id/bar_edit_text"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            android:src="@mipmap/emj_add" />-->
+
+        <TextView
+            android:id="@+id/text_send"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/bar_edit_text"
+            android:layout_toRightOf="@+id/bar_edit_text"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/shape_for_send"
+            android:text="发送"
+            android:gravity="center"
+            android:textColor="#fff"
+            tools:visibility="visible"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffcdcdcd" />
+
+
+</LinearLayout>
